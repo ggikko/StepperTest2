@@ -513,10 +513,10 @@ public abstract class ExpandableRecyclerAdapter<PVH extends ParentViewHolder, CV
     }
 
     /**
-     * Calls through to the ParentViewHolder to expand views for each
+     * Calls through to the ThreeStepParentViewHolder to expand views for each
      * RecyclerView the specified parent is a child of.
      *
-     * These calls to the ParentViewHolder are made so that animations can be
+     * These calls to the ThreeStepParentViewHolder are made so that animations can be
      * triggered at the ViewHolder level.
      *
      * @param parentIndex The index of the parent to expand
@@ -535,7 +535,7 @@ public abstract class ExpandableRecyclerAdapter<PVH extends ParentViewHolder, CV
     }
 
     /**
-     * Calls through to the ParentViewHolder to collapse views for each
+     * Calls through to the ThreeStepParentViewHolder to collapse views for each
      * RecyclerView a specified parent is a child of.
      *
      * These calls to the ParentViewHolder are made so that animations can be
