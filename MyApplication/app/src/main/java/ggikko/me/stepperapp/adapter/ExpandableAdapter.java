@@ -14,13 +14,14 @@ import ggikko.me.stepperapp.verticalstepper.adapter.ExpandableRecyclerAdapter;
 import ggikko.me.stepperapp.verticalstepper.model.ParentListItem;
 
 /**
- * Created by admin on 16. 5. 12..
+ * Created by ggikko on 16. 5. 12..
  */
 public class ExpandableAdapter extends ExpandableRecyclerAdapter<ThreeStepParentViewHolder,ThreeStepChildViewHolder> {
 
     private Context mContext;
     private LayoutInflater mInflater;
     private InvestRegistrationFragmentThird mFragment;
+    private int STEP_NUMBER = 0;
 
     public ExpandableAdapter(Context context, List<ParentListItem> itemList, InvestRegistrationFragmentThird fragment) {
         super(itemList);
@@ -43,7 +44,7 @@ public class ExpandableAdapter extends ExpandableRecyclerAdapter<ThreeStepParent
 
     @Override
     public void onBindParentViewHolder(ThreeStepParentViewHolder parentViewHolder, int position, ParentListItem parentListItem) {
-
+        parentViewHolder.roundedView.setText(++STEP_NUMBER + "");
     }
 
     @Override

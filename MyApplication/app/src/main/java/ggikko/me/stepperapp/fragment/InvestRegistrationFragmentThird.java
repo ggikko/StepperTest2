@@ -35,8 +35,7 @@ public class InvestRegistrationFragmentThird extends Fragment {
      * bind view
      */
     //TODO : Butterknif 7 -> 8
-    @Bind(R.id.three_step_recycler_view)
-    RecyclerView three_step_recycler_view;
+    @Bind(R.id.three_step_recycler_view) RecyclerView three_step_recycler_view;
 
     /**
      * expandable adapter

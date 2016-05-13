@@ -10,11 +10,11 @@ import ggikko.me.stepperapp.R;
 import ggikko.me.stepperapp.fragment.InvestRegistrationFragmentThird;
 
 /**
- * Created by admin on 16. 5. 12..
+ * Created by ggikko on 16. 5. 12..
  */
 public class ThreeStepChildViewHolder extends ggikko.me.stepperapp.verticalstepper.viewholder.ChildViewHolder {
 
-    InvestRegistrationFragmentThird mFragment;
+    private InvestRegistrationFragmentThird mFragment;
 
     @Bind(R.id.buttonContinue) Button buttonContinue;
 
@@ -29,7 +29,7 @@ public class ThreeStepChildViewHolder extends ggikko.me.stepperapp.verticalstepp
         ButterKnife.bind(this, itemView);
 
         this.mFragment = fragment;
-
-
     }
+
+
 }
