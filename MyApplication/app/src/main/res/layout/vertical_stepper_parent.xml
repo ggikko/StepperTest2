@@ -20,7 +20,7 @@
             android:layout_marginBottom="@dimen/item_line_first_margin"
             android:background="#BDBDBD" />
 
-        <com.bignerdranch.android.criminalintent.stepper.RoundedView
+        <ggikko.me.stepperapp.verticalstepper.util.RoundedView
             android:id="@+id/roundedView"
             android:layout_width="@dimen/item_circle_width_height"
             android:layout_height="@dimen/item_circle_width_height"/>

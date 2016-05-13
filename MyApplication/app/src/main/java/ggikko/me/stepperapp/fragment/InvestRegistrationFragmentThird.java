@@ -28,8 +28,11 @@ public class InvestRegistrationFragmentThird extends Fragment {
 
     public InvestRegistrationFragmentThird() {}
 
+    /** bind view */
+    //TODO : Butterknif 7 -> 8
     @Bind(R.id.three_step_recycler_view) RecyclerView three_step_recycler_view;
 
+    /** expandable adapter */
     private ExpandableRecyclerAdapter expandableRecyclerAdapter;
 
     @Override
@@ -38,19 +41,23 @@ public class InvestRegistrationFragmentThird extends Fragment {
         View view = inflater.inflate(R.layout.fragment_invest_registration_fragment_third, container, false);
         ButterKnife.bind(this,view);
 
+        /** recyclerview setting */
         three_step_recycler_view.setLayoutManager(new LinearLayoutManager(getActivity()));
-
         three_step_recycler_view.setItemViewCacheSize(8);
-
         three_step_recycler_view.setHasFixedSize(true);
-
         expandableRecyclerAdapter = new ExpandableAdapter(getActivity(), generateData(), this);
+
+        three_step_recycler_view.setAdapter(expandableRecyclerAdapter);
+
+        /** all step open */
+        expandableRecyclerAdapter.expandAllParents();
 
         return view;
     }
 
-    // 여기까지 함
+    /** Parent 및 Child fake data 생성 */
     private List<ParentListItem> generateData() {
+
         List<ParentListItem> listItems = new ArrayList<>();
 
         for(int i=0; i<4;i++) {

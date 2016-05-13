@@ -3,10 +3,12 @@ package ggikko.me.stepperapp.adapter;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.List;
 
+import ggikko.me.stepperapp.R;
 import ggikko.me.stepperapp.fragment.InvestRegistrationFragmentThird;
 import ggikko.me.stepperapp.verticalstepper.adapter.ExpandableRecyclerAdapter;
 import ggikko.me.stepperapp.verticalstepper.model.ParentListItem;
@@ -27,18 +29,16 @@ public class ExpandableAdapter extends ExpandableRecyclerAdapter<ThreeStepParent
         mFragment = fragment;
     }
 
-    public ExpandableAdapter(@NonNull List<? extends ParentListItem> parentItemList) {
-        super(parentItemList);
-    }
-
     @Override
     public ThreeStepParentViewHolder onCreateParentViewHolder(ViewGroup parentViewGroup) {
-        return null;
+        View view = mInflater.inflate(R.layout.vertical_stepper_parent,parentViewGroup, false);
+        return new ThreeStepParentViewHolder(view);
     }
 
     @Override
     public ThreeStepChildViewHolder onCreateChildViewHolder(ViewGroup childViewGroup) {
-        return null;
+        View view = mInflater.inflate(R.layout.vertical_stepper_child,childViewGroup, false);
+        return new ThreeStepChildViewHolder(view);
     }
 
     @Override

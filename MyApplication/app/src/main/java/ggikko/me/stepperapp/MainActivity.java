@@ -20,9 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (fragment == null) {
             fragment = new InvestRegistrationFragmentThird();
-            fm.beginTransaction()
-                    .add(R.id.fragment_container, fragment)
-                    .commit();
+            fm.beginTransaction().add(R.id.fragment_container, fragment).commit();
         }
 
     }

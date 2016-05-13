@@ -7,9 +7,8 @@ import android.view.View;
  */
 public class ThreeStepChildViewHolder extends ggikko.me.stepperapp.verticalstepper.viewholder.ChildViewHolder {
 
-
     public ThreeStepChildViewHolder(View itemView) {
         super(itemView);
-    }
 
+    }
 }
