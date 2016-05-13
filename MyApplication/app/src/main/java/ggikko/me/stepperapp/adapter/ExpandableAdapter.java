@@ -32,13 +32,13 @@ public class ExpandableAdapter extends ExpandableRecyclerAdapter<ThreeStepParent
     @Override
     public ThreeStepParentViewHolder onCreateParentViewHolder(ViewGroup parentViewGroup) {
         View view = mInflater.inflate(R.layout.vertical_stepper_parent,parentViewGroup, false);
-        return new ThreeStepParentViewHolder(view);
+        return new ThreeStepParentViewHolder(view, mFragment);
     }
 
     @Override
     public ThreeStepChildViewHolder onCreateChildViewHolder(ViewGroup childViewGroup) {
         View view = mInflater.inflate(R.layout.vertical_stepper_child,childViewGroup, false);
-        return new ThreeStepChildViewHolder(view);
+        return new ThreeStepChildViewHolder(view, mFragment);
     }
 
     @Override

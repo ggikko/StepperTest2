@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import ggikko.me.stepperapp.R;
+import ggikko.me.stepperapp.fragment.InvestRegistrationFragmentThird;
 import ggikko.me.stepperapp.verticalstepper.util.RoundedView;
 
 /**
@@ -17,7 +18,7 @@ public class ThreeStepParentViewHolder extends ggikko.me.stepperapp.verticalstep
 
     private static final boolean HONEYCOMB_AND_ABOVE = Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB;
 
-    public ThreeStepParentViewHolder(View itemView) {
+    public ThreeStepParentViewHolder(View itemView, InvestRegistrationFragmentThird mFragment) {
         super(itemView);
 //        roundedView = (RoundedView) itemView.findViewById(R.id.roundedView);
 //        textViewLabel = (TextView) itemView.findViewById(R.id.textViewLabel);
